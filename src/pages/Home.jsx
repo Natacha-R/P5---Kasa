@@ -23,7 +23,6 @@ function Home() {
               to={`/accommodation/${accommodation.id}`}
               key={accommodation.id} //doit être unique pour chaque élément
             >
-              {" "}
               {/*chemin dynamique pour créer un URL unique avec id pour chaque logement*/}
               <Cards
                 id={accommodation.id}
