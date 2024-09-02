@@ -1,3 +1,65 @@
-.nav-active {
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 68px;
+  margin: 20px;
+}
+
+.navigation {
+  justify-content: flex-end;
+  display: flex;
+  font-family: montserrat;
+}
+
+.navigation a {
+  color: black;
+  text-decoration: none;
+}
+
+.navigation ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.navigation li {
+  display: inline-block;
+  margin-left: 35px;
+}
+
+.nav-active li {
+  text-decoration: underline;
+}
+
+.banner img {
+  border-radius: 20px;
+  width: 100%;
+  height: 223px;
+  align-items: center;
+  text-align: center;
+  object-fit: cover;
+  -webkit-filter: brightness(50%);
+}
+
+.banner p {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  line-height: 223px;
+  color: white;
+  font-weight: 700;
+  font-size: 48px;
+  text-align: center;
+  z-index: 1000;
+  margin: 0;
+}
+
+.banner {
   position: relative;
+  height: 223px;
 }
