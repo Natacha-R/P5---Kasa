@@ -1,0 +1,12 @@
+.footer {
+  width: 100%;
+  margin-bottom: 0px;
+  height: 209px;
+}
+
+.footer img {
+  width: 100%;
+  height: 209px;
+  display: block;
+  object-fit: cover;
+}

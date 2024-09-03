@@ -3,6 +3,7 @@ import BannerH from "../assets/bannièreH.png";
 import Banner from "../components/Banner";
 import Cards from "../components/Cards"; // importation du composant pour afficher chaque logement
 import "../css/pages/home.css";
+import "../css/main.css";
 
 function Home() {
   return (
