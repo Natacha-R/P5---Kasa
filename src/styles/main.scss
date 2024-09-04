@@ -1,4 +1,4 @@
-@import "./pages/about";
+@import "./pages/about.scss";
 @import "./pages/accomodations.scss";
 @import "./pages/error.scss";
 @import "./pages/home.scss";
@@ -6,7 +6,4 @@
 @import "./pages/banner.scss";
 @import "./pages/card.scss";
 @import "./pages/footer.scss";
-
-body {
-  font-family: montserrat;
-}
+@import "./pages/layout.scss";

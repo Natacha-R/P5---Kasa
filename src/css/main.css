@@ -1,3 +1,56 @@
+.container {
+  margin-bottom: 40px !important;
+}
+
+.collapse {
+  margin-top: auto;
+}
+
+.collapse-container {
+  gap: 20px;
+  margin: 20px 100px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.collapse-header {
+  background-color: #ff6060;
+  border-radius: 5px;
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.collapse-header h2 {
+  color: white;
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.chevron-icon {
+  color: white;
+  cursor: pointer;
+  padding-right: 5px;
+  transition: transform 0.3s ease;
+}
+
+.chevron-icon.rotated {
+  transform: rotate(180deg);
+}
+
+.collapse-toggle {
+  background: none;
+  border: none;
+  font-size: 1.2em;
+}
+
+.collapse-content {
+  padding: 10px 20px;
+  background-color: #f6f6f6;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -6,11 +59,6 @@
   width: 90%;
   margin: auto;
   margin-top: 20px;
-}
-
-.home {
-  width: 90%;
-  margin: auto;
 }
 
 .navigation {
@@ -126,4 +174,11 @@
 
 body {
   font-family: montserrat;
+}
+
+.home,
+.container {
+  width: 90%;
+  margin: auto;
+  min-height: 600px;
 }
