@@ -1,1 +1,25 @@
+.error {
+  text-align: center;
+}
 
+.error img {
+  margin: 120px;
+}
+
+.error p {
+  font-size: 36px;
+  font-weight: 500;
+  color: #ff6060;
+}
+
+.error-nav {
+  color: black;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.error a {
+  display: block;
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
