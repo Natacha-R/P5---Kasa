@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../css/pages/layout.css";
+import "../css/pages/collapse.css";
 import "../css/pages/about.css";
 
 const Collapse = ({ title, children }) => {

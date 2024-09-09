@@ -3,7 +3,8 @@ body {
 }
 
 .home,
-.container {
+.container,
+.accommodation-container {
   width: 90%;
   margin: auto;
   min-height: 600px;
