@@ -4,6 +4,102 @@
 
 .accommodation-container {
   margin-bottom: 40px !important;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.accommodation-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.title-location {
+  flex: 1;
+}
+
+.titleAccommodation {
+  margin-top: 100px;
+  margin-bottom: 0px;
+  font-size: 36px;
+  font-weight: 500;
+  color: #ff6060;
+}
+
+.placeAccommodation {
+  margin-top: 5px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.tags {
+  display: flex;
+  gap: 10px;
+}
+
+.tag {
+  background-color: #ff6060;
+  color: white;
+  padding: 4px 26px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.host-rating {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  margin-top: 100px;
+}
+
+.host-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.host-name {
+  color: #ff6060;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: right;
+}
+
+.host-picture {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.rating {
+  display: flex;
+  gap: 15px;
+}
+
+.star img {
+  width: 23px;
+  height: 23px;
+}
+
+.accommodation-details {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.accommodation-details > div {
+  flex: 1;
+  border-radius: 5px;
+  max-width: 45%;
 }
 
 .error {

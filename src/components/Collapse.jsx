@@ -15,7 +15,7 @@ const Collapse = ({ title, children }) => {
       <div className="collapse-header">
         <h2>{title}</h2>
         <i
-          className={`fas fa-chevron-down chevron-icon ${
+          className={`fas fa-chevron-up chevron-icon ${
             isOpen ? "rotated" : ""
           }`}
           onClick={toggleCollapse}

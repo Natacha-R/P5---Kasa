@@ -17,16 +17,8 @@ function Accommodation() {
   }
 
   // Déstructuration des données du logement pour simplifier l'accès
-  const {
-    title,
-    location,
-    pictures,
-    tags,
-    host,
-    rating,
-    description,
-    equipments,
-  } = accommodation;
+  const { title, location, tags, host, rating, description, equipments } =
+    accommodation;
 
   // Générer les étoiles pour la notation
   const stars = Array(5)
@@ -45,7 +37,7 @@ function Accommodation() {
 
       {/* Informations principales : Titre, Localisation, Tags */}
       <div className="accommodation-header">
-        <div>
+        <div className="title-location">
           <h1 className="titleAccommodation">{title}</h1>
           <p className="placeAccommodation">{location}</p>
 
@@ -60,16 +52,19 @@ function Accommodation() {
         </div>
 
         {/* Informations sur l'hôte */}
-        <div className="host-info">
-          <div className="host-name">
-            <p>{host.name}</p>
+        <div className="host-rating">
+          <div className="host-info">
+            <p className="host-name">
+              {host.name.split(" ")[0]}
+              <br />
+              {host.name.split(" ")[1]}
+            </p>
+            <img className="host-picture" src={host.picture} alt={host.name} />
           </div>
-          <img className="host-picture" src={host.picture} alt={host.name} />
+          {/* Notation (étoiles) */}
+          <div className="rating">{stars}</div>
         </div>
       </div>
-
-      {/* Notation (étoiles) */}
-      <div className="rating">{stars}</div>
 
       {/* Description et Équipements avec le composant Collapse */}
       <div className="accommodation-details">

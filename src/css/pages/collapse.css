@@ -22,7 +22,7 @@
 .collapse-header h2 {
   color: white;
   margin: 0;
-  font-size: 1.2em;
+  font-size: 18px;
 }
 
 .chevron-icon {
@@ -33,13 +33,12 @@
 }
 
 .chevron-icon.rotated {
-  transform: rotate(180deg);
+  transform: rotate(-180deg);
 }
 
 .collapse-toggle {
   background: none;
   border: none;
-  font-size: 1.2em;
 }
 
 .collapse-content {
