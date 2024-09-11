@@ -3,7 +3,7 @@ import "../css/pages/layout.css";
 import "../css/pages/collapse.css";
 import "../css/pages/about.css";
 
-const Collapse = ({ title, children }) => {
+const Collapse = ({ title, className, children }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleCollapse = () => {
@@ -11,7 +11,7 @@ const Collapse = ({ title, children }) => {
   };
 
   return (
-    <div className="collapse-container">
+    <div className={className}>
       <div className="collapse-header">
         <h2>{title}</h2>
         <i

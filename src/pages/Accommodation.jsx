@@ -68,11 +68,11 @@ function Accommodation() {
 
       {/* Description et Équipements avec le composant Collapse */}
       <div className="accommodation-details">
-        <Collapse title="Description">
+        <Collapse title="Description" class="collapse-container-no-margin">
           <p>{description}</p>
         </Collapse>
 
-        <Collapse title="Équipements">
+        <Collapse title="Équipements" class="collapse-container-no-margin">
           <ul>
             {equipments.map((equipment, index) => (
               <li key={index}>{equipment}</li>

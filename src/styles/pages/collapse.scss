@@ -41,6 +41,16 @@
 }
 
 .collapse-content {
-  padding: 10px 20px;
+  padding: 10px 15px;
   background-color: #f6f6f6;
+}
+
+.collapse-content ul {
+  padding-left: 0px;
+  list-style: none;
+  line-height: 1.6;
+}
+
+.collapse-content p {
+  line-height: 1.6;
 }
