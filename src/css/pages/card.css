@@ -14,13 +14,30 @@
   display: block;
   position: absolute;
   bottom: 2%;
-  left: 10%;
+  padding: 10px 0;
+  left: 5%;
   right: 10%;
-  height: 52px;
+  height: auto;
   width: 80%;
-  line-height: 26px;
+  line-height: 1.2;
   color: white;
   font-weight: 700;
   z-index: 1000;
   margin: 0;
+}
+
+@media (max-width: 867px) {
+  .cardTitle {
+    font-size: 11px;
+  }
+}
+@media (max-width: 800px) {
+  .cardImg {
+    aspect-ratio: 16/9;
+    margin-bottom: 22px;
+  }
+  .cardTitle {
+    font-size: 18px;
+    padding-bottom: 30px;
+  }
 }

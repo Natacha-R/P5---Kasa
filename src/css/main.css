@@ -165,17 +165,11 @@
   text-decoration: underline;
 }
 
-.AccommodationList {
-  padding: 50px;
-  background-color: #f6f6f6;
-  border-radius: 25px;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 30%);
-  grid-gap: 50px;
-  justify-content: space-evenly;
-  margin-bottom: 40px;
+@media (max-width: 504px) {
+  .navigation li {
+    font-size: 15px;
+  }
 }
-
 .banner img {
   border-radius: 20px;
   width: 100%;
@@ -202,6 +196,7 @@
   text-align: center;
   z-index: 1000;
   margin: 0;
+  white-space: nowrap;
 }
 
 .banner {
@@ -211,6 +206,16 @@
   margin-bottom: 40px;
 }
 
+@media (max-width: 867px) {
+  .banner p {
+    font-size: 35px;
+  }
+}
+@media (max-width: 650px) {
+  .banner p {
+    font-size: 24px;
+  }
+}
 .card {
   width: 100%;
   position: relative;
@@ -227,17 +232,50 @@
   display: block;
   position: absolute;
   bottom: 2%;
-  left: 10%;
+  padding: 10px 0;
+  left: 5%;
   right: 10%;
-  height: 52px;
+  height: auto;
   width: 80%;
-  line-height: 26px;
+  line-height: 1.2;
   color: white;
   font-weight: 700;
   z-index: 1000;
   margin: 0;
 }
 
+@media (max-width: 867px) {
+  .cardTitle {
+    font-size: 11px;
+  }
+}
+@media (max-width: 800px) {
+  .cardImg {
+    aspect-ratio: 16/9;
+    margin-bottom: 22px;
+  }
+  .cardTitle {
+    font-size: 18px;
+    padding-bottom: 30px;
+  }
+}
+.AccommodationList {
+  padding: 50px;
+  background-color: #f6f6f6;
+  border-radius: 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 30%);
+  grid-gap: 50px;
+  justify-content: space-evenly;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 800px) {
+  .AccommodationList {
+    padding: 0;
+    display: inline;
+  }
+}
 .footer {
   width: 100%;
   margin-bottom: 0px;
@@ -262,4 +300,103 @@ body {
   margin: auto;
   margin-top: 20px;
   min-height: 600px;
+}
+
+.collapse {
+  margin-top: auto;
+}
+
+.collapse-container {
+  gap: 20px;
+  margin: 20px 100px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.collapse-header {
+  background-color: #ff6060;
+  border-radius: 5px;
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.collapse-header h2 {
+  color: white;
+  margin: 0;
+  font-size: 18px;
+}
+
+.chevron-icon {
+  color: white;
+  cursor: pointer;
+  padding-right: 5px;
+  transition: transform 0.3s ease;
+}
+
+.chevron-icon.rotated {
+  transform: rotate(-180deg);
+}
+
+.collapse-toggle {
+  background: none;
+  border: none;
+}
+
+.collapse-content {
+  padding: 10px 15px;
+  background-color: #f6f6f6;
+}
+
+.collapse-content ul {
+  padding-left: 0px;
+  list-style: none;
+  line-height: 1.6;
+}
+
+.collapse-content p {
+  line-height: 1.6;
+}
+
+.slideshow {
+  position: relative;
+  height: 415px;
+  width: 1240px;
+}
+
+.slideshow-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+.prev,
+.next {
+  background-color: transparent;
+  position: absolute;
+  top: 40%;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.slideshow-counter {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-weight: 500;
+  padding: 5px 10px;
 }

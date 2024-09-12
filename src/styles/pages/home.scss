@@ -24,6 +24,7 @@
   list-style-type: none;
   display: flex;
 }
+
 .navigation li {
   display: inline-block;
   margin-left: 35px;
@@ -34,14 +35,8 @@
   text-decoration: underline;
 }
 
-// Cards
-.AccommodationList {
-  padding: 50px;
-  background-color: #f6f6f6;
-  border-radius: 25px;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 30%);
-  grid-gap: 50px;
-  justify-content: space-evenly;
-  margin-bottom: 40px;
+@media (max-width: 504px) {
+  .navigation li {
+    font-size: 15px;
+  }
 }

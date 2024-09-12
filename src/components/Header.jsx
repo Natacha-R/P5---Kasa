@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom"; /*système d'ancre*/
 
 import Logo from "../assets/logoH.png";
+import SmallLogo from "../assets/logo_mobile.png";
 
 function Header() {
   return (
