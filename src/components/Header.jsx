@@ -8,7 +8,12 @@ function Header() {
   return (
     <div className="header">
       <div className="logo">
-        <img src={Logo} alt="logo kasa" />
+        <picture>
+          <source media="(max-width: 700px)" srcSet={SmallLogo} />
+          <source media="(min-width: 700px)" srcSet={Logo} />
+          {/* Image par défaut (sera remplacée par le sourceSet si condition est remplie) */}
+          <img src={Logo} alt="logo kasa" />
+        </picture>
       </div>
       <div className="navigation">
         <ul>
