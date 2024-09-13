@@ -1,5 +1,5 @@
 import React from "react";
-import BannerH from "../assets/bannièreH.png";
+import BannerH from "../assets/banniereH.png";
 import Banner from "../components/Banner";
 import Cards from "../components/Cards"; // importation du composant pour afficher chaque logement
 import "../css/pages/home.css";
