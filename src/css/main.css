@@ -170,6 +170,17 @@
     font-size: 15px;
   }
 }
+@media (max-width: 375px) {
+  .navigation li {
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-left: 0px;
+    width: 100%;
+  }
+  a:first-child {
+    margin-right: 20px;
+  }
+}
 .banner img {
   border-radius: 20px;
   width: 100%;
@@ -177,7 +188,7 @@
   align-items: center;
   text-align: center;
   object-fit: cover;
-  -webkit-filter: brightness(50%);
+  filter: brightness(50%);
 }
 
 .banner p {
@@ -214,6 +225,25 @@
 @media (max-width: 650px) {
   .banner p {
     font-size: 24px;
+  }
+}
+@media (max-width: 375px) {
+  .banner {
+    margin-top: 0px;
+    height: 111px;
+  }
+  .banner p {
+    display: block;
+    margin-top: 31px;
+    margin-left: 16px;
+    width: 225px;
+    line-height: 24px;
+    height: 48px;
+    white-space: wrap;
+    text-align: left;
+  }
+  .banner img {
+    height: 111px;
   }
 }
 .card {
@@ -257,6 +287,18 @@
   .cardTitle {
     font-size: 18px;
     padding-bottom: 30px;
+  }
+}
+@media (max-width: 375px) {
+  .card {
+    height: 255px;
+    margin-bottom: 20px;
+  }
+  .cardImg {
+    height: 255px;
+  }
+  .cardTitle {
+    top: 188px;
   }
 }
 .AccommodationList {

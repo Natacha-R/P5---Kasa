@@ -5,7 +5,7 @@
   align-items: center;
   text-align: center;
   object-fit: cover;
-  -webkit-filter: brightness(50%);
+  filter: brightness(50%);
 }
 
 .banner p {
@@ -42,5 +42,24 @@
 @media (max-width: 650px) {
   .banner p {
     font-size: 24px;
+  }
+}
+@media (max-width: 375px) {
+  .banner {
+    margin-top: 0px;
+    height: 111px;
+  }
+  .banner p {
+    display: block;
+    margin-top: 31px;
+    margin-left: 16px;
+    width: 225px;
+    line-height: 24px;
+    height: 48px;
+    white-space: wrap;
+    text-align: left;
+  }
+  .banner img {
+    height: 111px;
   }
 }

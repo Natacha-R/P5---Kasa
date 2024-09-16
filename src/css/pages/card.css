@@ -41,3 +41,15 @@
     padding-bottom: 30px;
   }
 }
+@media (max-width: 375px) {
+  .card {
+    height: 255px;
+    margin-bottom: 20px;
+  }
+  .cardImg {
+    height: 255px;
+  }
+  .cardTitle {
+    top: 188px;
+  }
+}
