@@ -29,6 +29,7 @@
   display: inline-block;
   margin-left: 35px;
   font-weight: 500;
+  font-size: 20px;
 }
 
 .nav-active li {
@@ -41,7 +42,7 @@
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 425px) {
   .navigation li {
     font-size: 12px;
     text-transform: uppercase;

@@ -40,24 +40,46 @@
   }
 }
 @media (max-width: 650px) {
+  .banner {
+    margin: 0;
+    margin-bottom: 20px;
+    height: 170px;
+  }
   .banner p {
-    font-size: 24px;
+    display: block;
+    margin-top: 65px;
+    margin-left: 16px;
+    margin-right: 16px;
+    line-height: 35px;
+    width: auto;
+    height: 110px;
+    white-space: wrap;
+    text-align: center;
+    font-size: 30px;
+  }
+  .banner img {
+    height: 170px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 543px) {
+  .banner p {
+    margin-top: 55px;
+    text-align: left;
+  }
+}
+@media (max-width: 425px) {
   .banner {
+    margin-bottom: 20px;
     margin-top: 0px;
     height: 111px;
   }
   .banner p {
-    display: block;
     margin-top: 31px;
     margin-left: 16px;
     width: 225px;
     line-height: 24px;
+    font-size: 24px;
     height: 48px;
-    white-space: wrap;
-    text-align: left;
   }
   .banner img {
     height: 111px;

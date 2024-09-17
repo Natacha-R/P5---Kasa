@@ -54,3 +54,9 @@
 .collapse-content p {
   line-height: 1.6;
 }
+
+@media (max-width: 767px) {
+  .collapse-container {
+    margin: 20px 0px;
+  }
+}

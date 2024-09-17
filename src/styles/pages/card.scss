@@ -45,7 +45,7 @@
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 425px) {
   .card {
     height: 255px;
     margin-bottom: 20px;
@@ -56,6 +56,7 @@
   }
 
   .cardTitle {
-    top: 188px;
+    top: auto;
+    padding-bottom: 2%;
   }
 }

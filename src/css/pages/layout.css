@@ -10,3 +10,11 @@ body {
   margin-top: 20px;
   min-height: 600px;
 }
+
+@media (max-width: 425px) {
+  .home,
+  .container,
+  .accommodation-container {
+    min-height: 0px;
+  }
+}
