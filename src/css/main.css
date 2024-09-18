@@ -7,7 +7,6 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 20px;
 }
 
 .accommodation-header {
@@ -23,6 +22,7 @@
 }
 
 .titleAccommodation {
+  margin-top: 0px;
   margin-bottom: 0px;
   font-size: 36px;
   font-weight: 500;
@@ -47,13 +47,16 @@
   border-radius: 10px;
   font-size: 14px;
   font-weight: 700;
+  text-align: center;
+  width: auto;
 }
 
 .host-rating {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 10px;
+  justify-content: space-between;
+  min-width: 175px;
 }
 
 .host-info {
@@ -104,6 +107,87 @@
   overflow: hidden;
 }
 
+@media (max-width: 700px) {
+  .accommodation-header {
+    flex-direction: column;
+  }
+  .host-rating {
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .star {
+    height: 80px;
+  }
+  .star img {
+    margin-top: 29px;
+    width: 23px;
+    height: 23px;
+  }
+}
+@media (max-width: 425px) {
+  .accommodation-container {
+    margin-top: 0px;
+    margin-bottom: 30px !important;
+    padding: 0px;
+    gap: 15px;
+  }
+  .titleAccommodation {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .placeAccommodation {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .tag {
+    border-radius: 5px;
+    font-size: 10px;
+    line-height: 18px;
+    height: 18px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    width: auto;
+  }
+  .host-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 33px;
+  }
+  .host-name {
+    font-size: 12px;
+  }
+  .host-picture {
+    width: 32px;
+    height: 32px;
+  }
+  .rating {
+    gap: 5px;
+  }
+  .star {
+    height: 33px;
+  }
+  .star img {
+    margin-top: 10px;
+    width: 13px;
+    height: 13px;
+  }
+  .accommodation-details {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .accommodation-details > div {
+    max-width: 100%;
+  }
+  .collapse-container-no-margin {
+    margin: 0px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+}
 .error {
   text-align: center;
 }
@@ -468,10 +552,22 @@ body {
     margin: 20px 0px;
   }
 }
+@media (max-width: 425px) {
+  .collapse-header h2 {
+    color: white;
+    margin: 0;
+    font-size: 13px;
+  }
+  .collapse-content ul,
+  .collapse-content p {
+    margin: 0px;
+    font-size: 12px;
+  }
+}
 .slideshow {
   position: relative;
   height: 415px;
-  width: 1240px;
+  width: 100%;
 }
 
 .slideshow-image {
@@ -507,4 +603,25 @@ body {
   color: white;
   font-weight: 500;
   padding: 5px 10px;
+}
+
+@media (max-width: 425px) {
+  .slideshow {
+    height: 255px;
+  }
+  .prev,
+  .next {
+    top: 115px;
+    width: 24px;
+    height: 24px;
+  }
+  .prev img,
+  .next img {
+    width: 12px;
+    height: 20px;
+    object-fit: cover;
+  }
+  .slideshow-counter {
+    display: none;
+  }
 }

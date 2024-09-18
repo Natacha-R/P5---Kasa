@@ -24,6 +24,7 @@
   margin: 0;
   font-size: 18px;
 }
+
 .chevron-icon {
   color: white;
   cursor: pointer;
@@ -58,5 +59,19 @@
 @media (max-width: 767px) {
   .collapse-container {
     margin: 20px 0px;
+  }
+}
+
+@media (max-width: 425px) {
+  .collapse-header h2 {
+    color: white;
+    margin: 0;
+    font-size: 13px;
+  }
+
+  .collapse-content ul,
+  .collapse-content p {
+    margin: 0px;
+    font-size: 12px;
   }
 }
