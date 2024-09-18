@@ -1,6 +1,7 @@
 import React from "react";
 import image from "../assets/404.png";
 import { NavLink } from "react-router-dom";
+import "../css/pages/layout.css";
 
 function Error() {
   return (
