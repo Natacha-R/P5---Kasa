@@ -1,5 +1,3 @@
-// Logo & menu de navigation (Header)
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -8,49 +6,47 @@
   width: 90%;
   margin: auto;
   margin-top: 3%;
-}
 
-.navigation {
-  justify-content: flex-end;
-  display: flex;
-}
+  .navigation {
+    justify-content: flex-end;
+    display: flex;
 
-.navigation a {
-  color: black;
-  text-decoration: none;
-}
+    a {
+      color: black;
+      text-decoration: none;
+    }
 
-.navigation ul {
-  list-style-type: none;
-  display: flex;
-}
+    ul {
+      list-style-type: none;
+      display: flex;
+    }
 
-.navigation li {
-  display: inline-block;
-  margin-left: 35px;
-  font-weight: 500;
-  font-size: 20px;
-}
+    li {
+      display: inline-block;
+      margin-left: 35px;
+      font-weight: 500;
+      font-size: 20px;
 
-.nav-active li {
-  text-decoration: underline;
-}
+      @media (max-width: 504px) {
+        font-size: 15px;
+      }
 
-@media (max-width: 504px) {
-  .navigation li {
-    font-size: 15px;
-  }
-}
-
-@media (max-width: 425px) {
-  .navigation li {
-    font-size: 12px;
-    text-transform: uppercase;
-    margin-left: 0px;
-    width: 100%;
+      @media (max-width: 425px) {
+        font-size: 12px;
+        text-transform: uppercase;
+        margin-left: 0px;
+        width: 100%;
+      }
+    }
   }
 
-  a:first-child {
-    margin-right: 20px;
+  .nav-active li {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 425px) {
+    a:first-child {
+      margin-right: 20px;
+    }
   }
 }

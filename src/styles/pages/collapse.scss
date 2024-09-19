@@ -8,6 +8,10 @@
   margin-bottom: 20px;
   border-radius: 5px;
   overflow: hidden;
+
+  @media (max-width: 767px) {
+    margin: 20px 0px;
+  }
 }
 
 .collapse-header {
@@ -17,12 +21,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
 
-.collapse-header h2 {
-  color: white;
-  margin: 0;
-  font-size: 18px;
+  h2 {
+    color: white;
+    margin: 0;
+    font-size: 18px;
+
+    @media (max-width: 425px) {
+      font-size: 13px;
+    }
+  }
 }
 
 .chevron-icon {
@@ -30,10 +38,10 @@
   cursor: pointer;
   padding-right: 5px;
   transition: transform 0.3s ease;
-}
 
-.chevron-icon.rotated {
-  transform: rotate(-180deg);
+  &.rotated {
+    transform: rotate(-180deg);
+  }
 }
 
 .collapse-toggle {
@@ -44,34 +52,24 @@
 .collapse-content {
   padding: 10px 15px;
   background-color: #f6f6f6;
-}
 
-.collapse-content ul {
-  padding-left: 0px;
-  list-style: none;
-  line-height: 1.6;
-}
+  ul {
+    padding-left: 0;
+    list-style: none;
+    line-height: 1.6;
 
-.collapse-content p {
-  line-height: 1.6;
-}
-
-@media (max-width: 767px) {
-  .collapse-container {
-    margin: 20px 0px;
-  }
-}
-
-@media (max-width: 425px) {
-  .collapse-header h2 {
-    color: white;
-    margin: 0;
-    font-size: 13px;
+    @media (max-width: 425px) {
+      margin: 0;
+      font-size: 12px;
+    }
   }
 
-  .collapse-content ul,
-  .collapse-content p {
-    margin: 0px;
-    font-size: 12px;
+  p {
+    line-height: 1.6;
+
+    @media (max-width: 425px) {
+      margin: 0;
+      font-size: 12px;
+    }
   }
 }

@@ -2,15 +2,13 @@
   width: 100%;
   position: relative;
 }
-
-.cardImg {
+.card .cardImg {
   width: 100%;
   aspect-ratio: 1;
   border-radius: 10px;
   object-fit: cover;
 }
-
-.cardTitle {
+.card .cardTitle {
   display: block;
   position: absolute;
   bottom: 2%;
@@ -25,18 +23,17 @@
   z-index: 1000;
   margin: 0;
 }
-
 @media (max-width: 867px) {
-  .cardTitle {
+  .card .cardTitle {
     font-size: 11px;
   }
 }
 @media (max-width: 800px) {
-  .cardImg {
+  .card .cardImg {
     aspect-ratio: 16/9;
     margin-bottom: 22px;
   }
-  .cardTitle {
+  .card .cardTitle {
     font-size: 18px;
     padding-bottom: 30px;
   }
@@ -46,10 +43,10 @@
     height: 255px;
     margin-bottom: 20px;
   }
-  .cardImg {
+  .card .cardImg {
     height: 255px;
   }
-  .cardTitle {
+  .card .cardTitle {
     top: auto;
     padding-bottom: 2%;
   }

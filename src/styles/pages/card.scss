@@ -1,62 +1,59 @@
 .card {
   width: 100%;
   position: relative;
-}
 
-.cardImg {
-  width: 100%;
-  aspect-ratio: 1;
-  border-radius: 10px;
-  object-fit: cover;
-}
-
-.cardTitle {
-  display: block;
-  position: absolute;
-  bottom: 2%;
-  padding: 10px 0;
-  left: 5%;
-  right: 10%;
-  height: auto;
-  width: 80%;
-  line-height: 1.2;
-  color: white;
-  font-weight: 700;
-  z-index: 1000;
-  margin: 0;
-}
-
-// media queries
-
-@media (max-width: 867px) {
-  .cardTitle {
-    font-size: 11px;
-  }
-}
-
-@media (max-width: 800px) {
   .cardImg {
-    aspect-ratio: 16/9;
-    margin-bottom: 22px;
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 10px;
+    object-fit: cover;
   }
-  .cardTitle {
-    font-size: 18px;
-    padding-bottom: 30px;
-  }
-}
 
-@media (max-width: 425px) {
-  .card {
+  .cardTitle {
+    display: block;
+    position: absolute;
+    bottom: 2%;
+    padding: 10px 0;
+    left: 5%;
+    right: 10%;
+    height: auto;
+    width: 80%;
+    line-height: 1.2;
+    color: white;
+    font-weight: 700;
+    z-index: 1000;
+    margin: 0;
+  }
+
+  @media (max-width: 867px) {
+    .cardTitle {
+      font-size: 11px;
+    }
+  }
+
+  @media (max-width: 800px) {
+    .cardImg {
+      aspect-ratio: 16/9;
+      margin-bottom: 22px;
+    }
+
+    .cardTitle {
+      font-size: 18px;
+      padding-bottom: 30px;
+    }
+  }
+
+  @media (max-width: 425px) {
     height: 255px;
     margin-bottom: 20px;
-  }
 
-  .cardImg {
-    height: 255px;
-  }
+    .cardImg {
+      height: 255px;
+    }
 
-  .cardTitle {
-    top: auto;
-    padding-bottom: 2%;
+    .cardTitle {
+      top: auto;
+      padding-bottom: 2%;
+    }
   }
 }

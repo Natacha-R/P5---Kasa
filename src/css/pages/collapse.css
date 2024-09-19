@@ -9,6 +9,11 @@
   border-radius: 5px;
   overflow: hidden;
 }
+@media (max-width: 767px) {
+  .collapse-container {
+    margin: 20px 0px;
+  }
+}
 
 .collapse-header {
   background-color: #ff6060;
@@ -18,11 +23,15 @@
   justify-content: space-between;
   align-items: center;
 }
-
 .collapse-header h2 {
   color: white;
   margin: 0;
   font-size: 18px;
+}
+@media (max-width: 425px) {
+  .collapse-header h2 {
+    font-size: 13px;
+  }
 }
 
 .chevron-icon {
@@ -31,7 +40,6 @@
   padding-right: 5px;
   transition: transform 0.3s ease;
 }
-
 .chevron-icon.rotated {
   transform: rotate(-180deg);
 }
@@ -45,31 +53,23 @@
   padding: 10px 15px;
   background-color: #f6f6f6;
 }
-
 .collapse-content ul {
-  padding-left: 0px;
+  padding-left: 0;
   list-style: none;
   line-height: 1.6;
 }
-
+@media (max-width: 425px) {
+  .collapse-content ul {
+    margin: 0;
+    font-size: 12px;
+  }
+}
 .collapse-content p {
   line-height: 1.6;
 }
-
-@media (max-width: 767px) {
-  .collapse-container {
-    margin: 20px 0px;
-  }
-}
 @media (max-width: 425px) {
-  .collapse-header h2 {
-    color: white;
-    margin: 0;
-    font-size: 13px;
-  }
-  .collapse-content ul,
   .collapse-content p {
-    margin: 0px;
+    margin: 0;
     font-size: 12px;
   }
 }

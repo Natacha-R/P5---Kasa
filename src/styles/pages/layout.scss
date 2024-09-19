@@ -10,13 +10,8 @@ body {
   margin: auto;
   margin-top: 20px;
   min-height: 600px;
-}
 
-@media (max-width: 425px) {
-  .home,
-  .container,
-  .error,
-  .accommodation-container {
+  @media (max-width: 425px) {
     min-height: 0px;
   }
 }
