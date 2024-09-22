@@ -1,3 +1,6 @@
+@import "../partials/variables";
+@import "../partials/mixins";
+
 .slideshow {
   position: relative;
   height: 415px;
@@ -28,7 +31,7 @@
     }
 
     img {
-      @media (max-width: 425px) {
+      @include respond-to(mobile) {
         width: 12px;
         height: 20px;
         object-fit: cover;
@@ -41,12 +44,12 @@
     bottom: 15px;
     left: 50%;
     transform: translateX(-50%);
-    color: white;
+    color: $secondary-color;
     font-weight: 500;
     padding: 5px 10px;
   }
 
-  @media (max-width: 425px) {
+  @include respond-to(mobile) {
     height: 255px;
 
     .prev,

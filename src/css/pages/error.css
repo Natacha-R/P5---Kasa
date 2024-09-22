@@ -40,8 +40,8 @@
 
 .error-nav {
   color: black;
-  font-weight: 500;
   font-size: 18px;
+  font-weight: 500;
 }
 @media (max-width: 425px) {
   .error-nav {

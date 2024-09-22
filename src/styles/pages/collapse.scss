@@ -1,3 +1,6 @@
+@import "../partials/variables";
+@import "../partials/mixins";
+
 .collapse {
   margin-top: auto;
 }
@@ -9,13 +12,13 @@
   border-radius: 5px;
   overflow: hidden;
 
-  @media (max-width: 767px) {
+  @include respond-to(tablet) {
     margin: 20px 0px;
   }
 }
 
 .collapse-header {
-  background-color: #ff6060;
+  background-color: $primary-color;
   border-radius: 5px;
   padding: 8px;
   display: flex;
@@ -23,18 +26,18 @@
   align-items: center;
 
   h2 {
-    color: white;
+    color: $secondary-color;
     margin: 0;
     font-size: 18px;
 
-    @media (max-width: 425px) {
+    @include respond-to(mobile) {
       font-size: 13px;
     }
   }
 }
 
 .chevron-icon {
-  color: white;
+  color: $secondary-color;
   cursor: pointer;
   padding-right: 5px;
   transition: transform 0.3s ease;
@@ -51,14 +54,14 @@
 
 .collapse-content {
   padding: 10px 15px;
-  background-color: #f6f6f6;
+  background-color: $background-color;
 
   ul {
     padding-left: 0;
     list-style: none;
     line-height: 1.6;
 
-    @media (max-width: 425px) {
+    @include respond-to(mobile) {
       margin: 0;
       font-size: 12px;
     }
@@ -67,7 +70,7 @@
   p {
     line-height: 1.6;
 
-    @media (max-width: 425px) {
+    @include respond-to(mobile) {
       margin: 0;
       font-size: 12px;
     }

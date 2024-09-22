@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "../css/pages/slideshow.css";
 import imageFlecheD from "../assets/FlecheD.png";
 import imageFlecheG from "../assets/FlecheG.png";
 

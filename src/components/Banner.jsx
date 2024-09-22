@@ -1,5 +1,4 @@
 import React from "react";
-import "../css/pages/banner.css";
 
 function Banner({ title, cover }) {
   return (

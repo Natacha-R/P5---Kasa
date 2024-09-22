@@ -1,3 +1,6 @@
+@import "../partials/variables";
+@import "../partials/mixins";
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -12,7 +15,7 @@
     display: flex;
 
     a {
-      color: black;
+      color: $text-color;
       text-decoration: none;
     }
 
@@ -24,14 +27,13 @@
     li {
       display: inline-block;
       margin-left: 35px;
-      font-weight: 500;
-      font-size: 20px;
+      @include text-style(20px);
 
-      @media (max-width: 504px) {
+      @include respond-to(tablet) {
         font-size: 15px;
       }
 
-      @media (max-width: 425px) {
+      @include respond-to(mobile) {
         font-size: 12px;
         text-transform: uppercase;
         margin-left: 0px;
@@ -44,7 +46,7 @@
     text-decoration: underline;
   }
 
-  @media (max-width: 425px) {
+  @include respond-to(mobile) {
     a:first-child {
       margin-right: 20px;
     }

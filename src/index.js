@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
+import "./css/main.css"; //Permet de ne pas importer les css dans chaque pages / composants
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 

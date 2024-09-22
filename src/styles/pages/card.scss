@@ -1,3 +1,6 @@
+@import "../partials/variables";
+@import "../partials/mixins";
+
 .card {
   width: 100%;
   position: relative;
@@ -19,19 +22,19 @@
     height: auto;
     width: 80%;
     line-height: 1.2;
-    color: white;
+    color: $secondary-color;
     font-weight: 700;
     z-index: 1000;
     margin: 0;
   }
 
-  @media (max-width: 867px) {
+  @include respond-to(desktop) {
     .cardTitle {
       font-size: 11px;
     }
   }
 
-  @media (max-width: 800px) {
+  @include respond-to(tablet) {
     .cardImg {
       aspect-ratio: 16/9;
       margin-bottom: 22px;
@@ -43,7 +46,7 @@
     }
   }
 
-  @media (max-width: 425px) {
+  @include respond-to(mobile) {
     height: 255px;
     margin-bottom: 20px;
 

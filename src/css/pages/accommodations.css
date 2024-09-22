@@ -2,6 +2,8 @@
   margin-bottom: 60px !important;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
   gap: 20px;
 }
 @media (max-width: 425px) {
@@ -15,14 +17,18 @@
 
 .accommodation-header {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
   gap: 20px;
   flex-wrap: wrap;
 }
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .accommodation-header {
+    display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
   }
 }
 
@@ -58,17 +64,20 @@
 
 .tags {
   display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
   gap: 10px;
   flex-wrap: wrap;
 }
 
 .tag {
   background-color: #ff6060;
-  color: white;
+  color: #ffffff;
   padding: 4px 26px;
   border-radius: 10px;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 600;
   text-align: center;
   width: auto;
 }
@@ -86,21 +95,24 @@
 .host-rating {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
   justify-content: space-between;
+  align-items: flex-end;
   min-width: 175px;
 }
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .host-rating {
+    display: flex;
     flex-direction: row-reverse;
-    align-items: flex-end;
     justify-content: space-between;
+    align-items: flex-end;
     width: 100%;
   }
 }
 
 .host-info {
   display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
   gap: 10px;
 }
@@ -140,6 +152,9 @@
 
 .rating {
   display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
   gap: 15px;
 }
 @media (max-width: 425px) {
@@ -158,9 +173,12 @@
     height: 13px;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .star {
     height: 80px;
+  }
+  .star img {
+    margin-top: 28px;
   }
 }
 @media (max-width: 425px) {
@@ -174,7 +192,9 @@
 
 .accommodation-details {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: stretch;
 }
 .accommodation-details > div {
   flex: 1;
@@ -188,7 +208,10 @@
 }
 @media (max-width: 425px) {
   .accommodation-details {
+    display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
     gap: 20px;
   }
 }

@@ -18,17 +18,17 @@
   height: auto;
   width: 80%;
   line-height: 1.2;
-  color: white;
+  color: #ffffff;
   font-weight: 700;
   z-index: 1000;
   margin: 0;
 }
-@media (max-width: 867px) {
+@media (max-width: 1024px) {
   .card .cardTitle {
     font-size: 11px;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 767px) {
   .card .cardImg {
     aspect-ratio: 16/9;
     margin-bottom: 22px;

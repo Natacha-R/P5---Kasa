@@ -1,3 +1,6 @@
+@import "../partials/variables";
+@import "../partials/mixins";
+
 .banner {
   position: relative;
   height: 223px;
@@ -8,8 +11,7 @@
     border-radius: 20px;
     width: 100%;
     height: 223px;
-    align-items: center;
-    text-align: center;
+    @include flex-container(center, center);
     object-fit: cover;
     filter: brightness(50%);
   }
@@ -25,21 +27,20 @@
     width: 100%;
     line-height: 223px;
     color: white;
-    font-weight: 700;
-    font-size: 48px;
+    @include text-style(48px, 700);
     text-align: center;
     z-index: 1000;
     margin: 0;
     white-space: nowrap;
   }
 
-  @media (max-width: 867px) {
+  @include respond-to(desktop) {
     p {
       font-size: 35px;
     }
   }
 
-  @media (max-width: 650px) {
+  @include respond-to(tablet) {
     margin: 0;
     margin-bottom: 20px;
     height: 170px;
@@ -68,7 +69,7 @@
     }
   }
 
-  @media (max-width: 425px) {
+  @include respond-to(mobile) {
     margin-bottom: 20px;
     margin-top: 0;
     height: 111px;

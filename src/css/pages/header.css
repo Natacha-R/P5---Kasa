@@ -22,10 +22,10 @@
 .header .navigation li {
   display: inline-block;
   margin-left: 35px;
-  font-weight: 500;
   font-size: 20px;
+  font-weight: 500;
 }
-@media (max-width: 504px) {
+@media (max-width: 767px) {
   .header .navigation li {
     font-size: 15px;
   }

@@ -1,5 +1,9 @@
+@import "../partials/variables";
+@import "../partials/mixins";
+
 body {
   font-family: montserrat;
+  margin: 0;
 }
 
 .home,
@@ -11,7 +15,7 @@ body {
   margin-top: 20px;
   min-height: 600px;
 
-  @media (max-width: 425px) {
+  @include respond-to(mobile) {
     min-height: 0px;
   }
 }

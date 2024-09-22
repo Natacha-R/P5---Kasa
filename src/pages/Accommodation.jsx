@@ -2,7 +2,6 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import AccommodationList from "../data/logements.json";
 import Error from "./Error";
-import "../css/pages/layout.css";
 import Slideshow from "../components/Slideshow";
 import Collapse from "../components/Collapse";
 import imageR from "../assets/starsR.png";

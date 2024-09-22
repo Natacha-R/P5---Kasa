@@ -1,3 +1,6 @@
+@import "../partials/variables";
+@import "../partials/mixins";
+
 .error {
   text-align: center;
 
@@ -9,9 +12,8 @@
   }
 
   p {
-    font-size: 36px;
-    font-weight: 500;
-    color: #ff6060;
+    @include text-style(36px);
+    color: $primary-color;
   }
 
   a {
@@ -20,7 +22,7 @@
     margin-bottom: 120px;
   }
 
-  @media (max-width: 425px) {
+  @include respond-to(mobile) {
     img {
       width: 198px;
       margin: auto;
@@ -45,11 +47,10 @@
 }
 
 .error-nav {
-  color: black;
-  font-weight: 500;
-  font-size: 18px;
+  color: $text-color;
+  @include text-style;
 
-  @media (max-width: 425px) {
+  @include respond-to(mobile) {
     font-size: 14px;
     height: 20px;
     width: 221px;

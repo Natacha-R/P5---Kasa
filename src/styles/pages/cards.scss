@@ -1,6 +1,9 @@
+@import "../partials/variables";
+@import "../partials/mixins";
+
 .AccommodationList {
   padding: 50px;
-  background-color: #f6f6f6;
+  background-color: $background-color;
   border-radius: 25px;
   display: grid;
   grid-template-columns: repeat(auto-fill, 30%);
@@ -8,7 +11,7 @@
   justify-content: space-evenly;
   margin-bottom: 40px;
 
-  @media (max-width: 800px) {
+  @include respond-to(tablet) {
     padding: 0;
     display: inline;
   }

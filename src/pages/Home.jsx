@@ -2,10 +2,6 @@ import React from "react";
 import BannerH from "../assets/banniereH.png";
 import Banner from "../components/Banner";
 import Cards from "../components/Cards"; // importation du composant pour afficher chaque logement
-import "../css/pages/header.css";
-import "../css/pages/cards.css";
-import "../css/pages/layout.css";
-import "../css/main.css";
 
 function Home() {
   return (
