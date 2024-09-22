@@ -48,9 +48,9 @@
     height: 170px;
   }
   .banner p {
-    margin-top: 65px;
-    margin-left: 16px;
-    margin-right: 16px;
+    margin-top: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
     line-height: 35px;
     width: auto;
     height: 110px;
@@ -75,8 +75,8 @@
     height: 111px;
   }
   .banner p {
-    margin-top: 31px;
-    margin-left: 16px;
+    margin-top: 30px;
+    margin-left: 20px;
     width: 225px;
     line-height: 24px;
     font-size: 24px;

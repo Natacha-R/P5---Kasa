@@ -1,6 +1,8 @@
 @import "../partials/variables";
 @import "../partials/mixins";
 
+// Cartes logements page "Accueil"
+
 .card {
   width: 100%;
   position: relative;
@@ -37,18 +39,18 @@
   @include respond-to(tablet) {
     .cardImg {
       aspect-ratio: 16/9;
-      margin-bottom: 22px;
+      margin-bottom: $margin-md;
     }
 
     .cardTitle {
       font-size: 18px;
-      padding-bottom: 30px;
+      padding-bottom: $margin-lg;
     }
   }
 
   @include respond-to(mobile) {
     height: 255px;
-    margin-bottom: 20px;
+    margin-bottom: $margin-md;
 
     .cardImg {
       height: 255px;

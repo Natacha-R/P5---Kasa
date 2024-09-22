@@ -1,6 +1,8 @@
 @import "../partials/variables";
 @import "../partials/mixins";
 
+// conteneurs des cartes logements, page "Accueil"
+
 .AccommodationList {
   padding: 50px;
   background-color: $background-color;
@@ -9,7 +11,7 @@
   grid-template-columns: repeat(auto-fill, 30%);
   grid-gap: 50px;
   justify-content: space-evenly;
-  margin-bottom: 40px;
+  margin-bottom: $margin-xl;
 
   @include respond-to(tablet) {
     padding: 0;

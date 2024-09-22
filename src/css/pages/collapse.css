@@ -11,7 +11,7 @@
 }
 @media (max-width: 767px) {
   .collapse-container {
-    margin: 20px 0px;
+    margin: 20px 0;
   }
 }
 
@@ -20,6 +20,7 @@
   border-radius: 5px;
   padding: 8px;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }

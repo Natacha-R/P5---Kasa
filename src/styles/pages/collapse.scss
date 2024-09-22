@@ -1,19 +1,21 @@
 @import "../partials/variables";
 @import "../partials/mixins";
 
+// Collapses pages "A Propos" & "logements"
+
 .collapse {
-  margin-top: auto;
+  margin-top: $margin-auto;
 }
 
 .collapse-container {
   gap: 20px;
-  margin: 20px 100px;
-  margin-bottom: 20px;
+  margin: $margin-md 100px;
+  margin-bottom: $margin-md;
   border-radius: 5px;
   overflow: hidden;
 
   @include respond-to(tablet) {
-    margin: 20px 0px;
+    margin: $margin-md 0;
   }
 }
 
@@ -21,9 +23,7 @@
   background-color: $primary-color;
   border-radius: 5px;
   padding: 8px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flex-container(row, space-between, center);
 
   h2 {
     color: $secondary-color;

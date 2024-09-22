@@ -1,5 +1,6 @@
 .header {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   height: 68px;
@@ -8,8 +9,10 @@
   margin-top: 3%;
 }
 .header .navigation {
-  justify-content: flex-end;
   display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: stretch;
 }
 .header .navigation a {
   color: black;
@@ -18,10 +21,13 @@
 .header .navigation ul {
   list-style-type: none;
   display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
 }
 .header .navigation li {
   display: inline-block;
-  margin-left: 35px;
+  margin-left: 30px;
   font-size: 20px;
   font-weight: 500;
 }

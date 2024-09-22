@@ -182,7 +182,7 @@
     height: 80px;
   }
   .star img {
-    margin-top: 28px;
+    margin-top: 30px;
   }
 }
 @media (max-width: 425px) {
@@ -282,6 +282,7 @@
 
 .header {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   height: 68px;
@@ -290,8 +291,10 @@
   margin-top: 3%;
 }
 .header .navigation {
-  justify-content: flex-end;
   display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: stretch;
 }
 .header .navigation a {
   color: black;
@@ -300,10 +303,13 @@
 .header .navigation ul {
   list-style-type: none;
   display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
 }
 .header .navigation li {
   display: inline-block;
-  margin-left: 35px;
+  margin-left: 30px;
   font-size: 20px;
   font-weight: 500;
 }
@@ -379,9 +385,9 @@
     height: 170px;
   }
   .banner p {
-    margin-top: 65px;
-    margin-left: 16px;
-    margin-right: 16px;
+    margin-top: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
     line-height: 35px;
     width: auto;
     height: 110px;
@@ -406,8 +412,8 @@
     height: 111px;
   }
   .banner p {
-    margin-top: 31px;
-    margin-left: 16px;
+    margin-top: 30px;
+    margin-left: 20px;
     width: 225px;
     line-height: 24px;
     font-size: 24px;
@@ -448,7 +454,7 @@
 @media (max-width: 767px) {
   .card .cardImg {
     aspect-ratio: 16/9;
-    margin-bottom: 22px;
+    margin-bottom: 20px;
   }
   .card .cardTitle {
     font-size: 18px;
@@ -534,7 +540,7 @@ body {
 }
 @media (max-width: 767px) {
   .collapse-container {
-    margin: 20px 0px;
+    margin: 20px 0;
   }
 }
 
@@ -543,6 +549,7 @@ body {
   border-radius: 5px;
   padding: 8px;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }

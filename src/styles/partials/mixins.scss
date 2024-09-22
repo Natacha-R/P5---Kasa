@@ -19,13 +19,13 @@
   }
 }
 
-// gestion du texte Mixin
+// Gestion du texte Mixin
 @mixin text-style($size: 18px, $weight: 500) {
   font-size: $size;
   font-weight: $weight;
 }
 
-// gestion des flexbox
+// Gestion des flexbox Mixin
 @mixin flex-container($direction: row, $justify: flex-start, $align: stretch) {
   display: flex;
   flex-direction: $direction;

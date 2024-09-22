@@ -1,10 +1,19 @@
-// Couleurs
+// Couleurs variables
 $primary-color: #ff6060;
 $secondary-color: #ffffff;
 $background-color: #f6f6f6;
 $text-color: black;
 
-// Tailles d'écran (breakpoints)
+// Marges variables
+$margin-xs: 5px;
+$margin-sm: 10px;
+$margin-md: 20px;
+$margin-lg: 30px;
+$margin-xl: 40px;
+$margin-xxl: 60px;
+$margin-auto: auto; // Utilisé pour centrer les éléments
+
+// Tailles d'écran (breakpoints) variables
 $breakpoint-mobile: 425px;
 $breakpoint-tablet: 767px;
 $breakpoint-desktop: 1024px;

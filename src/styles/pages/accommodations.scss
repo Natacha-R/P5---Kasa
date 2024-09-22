@@ -1,14 +1,16 @@
 @import "../partials/variables";
 @import "../partials/mixins";
 
+// Page "Logements"
+
 .accommodation-container {
-  margin-bottom: 60px !important;
+  margin-bottom: $margin-xxl !important;
   @include flex-container(column, flex-start, stretch);
   gap: 20px;
 
   @include respond-to(mobile) {
     margin-top: 0px;
-    margin-bottom: 30px !important;
+    margin-bottom: $margin-lg !important;
     padding: 0px;
     gap: 15px;
   }
@@ -41,7 +43,7 @@
 }
 
 .placeAccommodation {
-  margin-top: 5px;
+  margin-top: $margin-xs;
   @include text-style;
 
   @include respond-to(mobile) {
@@ -142,14 +144,14 @@
   @include respond-to(tablet) {
     height: 80px;
     img {
-      margin-top: 28px;
+      margin-top: $margin-lg;
     }
   }
 
   @include respond-to(mobile) {
     height: 33px;
     img {
-      margin-top: 10px;
+      margin-top: $margin-sm;
     }
   }
 }
@@ -175,7 +177,7 @@
 
 .collapse-container-no-margin {
   margin: 0px;
-  margin-bottom: 10px;
+  margin-bottom: $margin-sm;
   border-radius: 5px;
   overflow: hidden;
 }

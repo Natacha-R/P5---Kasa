@@ -1,6 +1,8 @@
 @import "../partials/variables";
 @import "../partials/mixins";
 
+// Mise en page générale
+
 body {
   font-family: montserrat;
   margin: 0;
@@ -11,8 +13,8 @@ body {
 .error,
 .accommodation-container {
   width: 90%;
-  margin: auto;
-  margin-top: 20px;
+  margin: $margin-auto;
+  margin-top: $margin-md;
   min-height: 600px;
 
   @include respond-to(mobile) {

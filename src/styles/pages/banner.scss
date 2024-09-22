@@ -1,11 +1,13 @@
 @import "../partials/variables";
 @import "../partials/mixins";
 
+// Bannières pages "Accueil" + "A Propos"
+
 .banner {
   position: relative;
   height: 223px;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: $margin-xl;
+  margin-bottom: $margin-xl;
 
   img {
     border-radius: 20px;
@@ -42,7 +44,7 @@
 
   @include respond-to(tablet) {
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: $margin-md;
     height: 170px;
 
     img {
@@ -50,9 +52,9 @@
     }
 
     p {
-      margin-top: 65px;
-      margin-left: 16px;
-      margin-right: 16px;
+      margin-top: $margin-xxl;
+      margin-left: $margin-md;
+      margin-right: $margin-md;
       line-height: 35px;
       width: auto;
       height: 110px;
@@ -70,7 +72,7 @@
   }
 
   @include respond-to(mobile) {
-    margin-bottom: 20px;
+    margin-bottom: $margin-md;
     margin-top: 0;
     height: 111px;
 
@@ -79,8 +81,8 @@
     }
 
     p {
-      margin-top: 31px;
-      margin-left: 16px;
+      margin-top: $margin-lg;
+      margin-left: $margin-md;
       width: 225px;
       line-height: 24px;
       font-size: 24px;
