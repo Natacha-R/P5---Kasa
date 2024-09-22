@@ -1,6 +1,7 @@
-import React from "react";
+import React from "react"; // Importé depuis la bibliothèque react pour créer des composants react.
+import { NavLink } from "react-router-dom"; // composant utilisé pour créer des liens de navigation dans une application React utilisant le routage.
+
 import image from "../assets/404.png";
-import { NavLink } from "react-router-dom";
 
 function Error() {
   return (
@@ -8,11 +9,11 @@ function Error() {
       <img src={image} alt="logo erreur 404" />
       <p> Oups! La page que vous demandez n'existe pas. </p>
       <NavLink to="/" className="error-nav">
-        {" "}
-        Retourner sur la page d'accueil{" "}
+        {/* lien de navigation qui redirige l'utilisateur vers la page d'accueil */}{" "}
+        Retourner sur la page d'accueil
       </NavLink>
     </main>
   );
 }
 
-export default Error;
+export default Error; // importer facilement dans d'autres parties de l'application.

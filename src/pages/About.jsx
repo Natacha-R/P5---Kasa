@@ -1,4 +1,5 @@
-import React from "react";
+import React from "react"; // Importé depuis la bibliothèque react pour créer des composants react.
+
 import Banner from "../components/Banner";
 import BannerA from "../assets/banniereP.png";
 import Collapse from "../components/Collapse.jsx";
@@ -6,7 +7,9 @@ import Collapse from "../components/Collapse.jsx";
 function About() {
   return (
     <div className="container">
+      {/*conteneur principal*/}
       <Banner cover={BannerA} />
+      {/* composant Banner, propriété cover avec l'image Banner pour afficher la bannière avec l'image*/}
       <div className="collapse">
         <Collapse title="Fiabilité" className="collapse-container">
           <p>
@@ -45,4 +48,4 @@ function About() {
   );
 }
 
-export default About;
+export default About; // permet d'importer le composant dans d'autres parties de l'appli.
