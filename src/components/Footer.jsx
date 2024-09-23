@@ -1,7 +1,9 @@
-import React from "react";
+import React from "react"; // importe React depuis la bibliothèque "react", (permet d'utiliser les fonctionnalités de React dans le fichier)
 
-import LogoFooter from "../assets/FooterDesktop.png";
-import LogoFooterSmall from "../assets/FooterMobile.png";
+import LogoFooter from "../assets/footerDesktop.png";
+import LogoFooterSmall from "../assets/footerMobile.png";
+
+// composant Footer "intégralité du site" pour afficher une image dans le bas de la page :
 
 function Footer() {
   return (
@@ -18,4 +20,4 @@ function Footer() {
   );
 }
 
-export default Footer;
+export default Footer; // // composant Footer est exporté par défaut (permet à d'autres fichiers de l'importer et de l'utiliser).

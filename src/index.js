@@ -1,6 +1,7 @@
 // Importations des dépendances principales :
 import React from "react"; // Import bibliothèque JavaScript.
 import ReactDOM from "react-dom/client"; // Bibliothèque qui permet de relier les composants React au Dom du navigateur.
+
 import "./css/main.css"; //Permet de ne pas importer les css dans chaque pages / composants.
 import App from "./App"; // Importe le composant APP, point d'entrée principal de l'appli.
 import reportWebVitals from "./reportWebVitals"; // permet de mesurer les performances de l'appli.

@@ -1,7 +1,7 @@
 import React from "react"; // Importé depuis la bibliothèque react pour créer des composants react.
 
 import Banner from "../components/Banner";
-import BannerA from "../assets/banniereP.png";
+import BannerA from "../assets/banniereA.png";
 import Collapse from "../components/Collapse.jsx";
 
 function About() {
